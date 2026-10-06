@@ -1,0 +1,23 @@
+{
+  "name": "claude-cua-toolset",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Quickstart: give Claude a browser with the Anthropic SDK and Stagehand",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "example": "tsx --env-file=.env example.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.132.0",
+    "stagehand-claude-sdk": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
