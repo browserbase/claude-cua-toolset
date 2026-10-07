@@ -1,6 +1,6 @@
 # Claude Toolset
 
-Give Claude a browser through the Anthropic SDK. `StagehandBrowser` uses Stagehand to handle navigation, screenshots, and page interactions while the Anthropic SDK manages the model's tool loop.
+Give Claude a browser through the Anthropic SDK. `StagehandBrowser` uses [Stagehand](https://stagehand.dev) to handle navigation, screenshots, and page interactions while the Anthropic SDK manages the model's tool loop.
 
 This repository contains TypeScript and Python examples that import the published `stagehand-claude-sdk` packages.
 
