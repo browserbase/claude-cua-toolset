@@ -6,11 +6,11 @@ This repository contains TypeScript and Python examples that import the publishe
 
 **TypeScript** · [`typescript/example.ts`](typescript/example.ts)
 
-<img src="assets/quickstart-typescript.png" width="760" alt="TypeScript quickstart: launch a StagehandBrowser, pass it to the Anthropic tool runner, and print Claude's messages.">
+<img src="assets/quickstart-typescript.png" width="640" alt="TypeScript quickstart: launch a StagehandBrowser, pass it to the Anthropic tool runner, and print Claude's messages.">
 
 **Python** · [`python/example.py`](python/example.py)
 
-<img src="assets/quickstart-python.png" width="760" alt="Python quickstart: launch a StagehandBrowser, pass it to the async Anthropic tool runner, and print Claude's messages.">
+<img src="assets/quickstart-python.png" width="640" alt="Python quickstart: launch a StagehandBrowser, pass it to the async Anthropic tool runner, and print Claude's messages.">
 
 > [!WARNING]
 > Demo and reference code only. Browserbase does not claim that any recipe, integration, target, data source, vendor, or workflow in this repository has been vetted, approved, secured, or validated for production use. Independently review the code and obtain all required authorization before running it. You are responsible for compliance, site terms, privacy, security, costs, and outcomes. Use at your own risk.
