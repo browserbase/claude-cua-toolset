@@ -4,6 +4,11 @@ Give Claude a browser through the Anthropic SDK. `StagehandBrowser` uses Stageha
 
 This repository contains TypeScript and Python examples that import the published `stagehand-claude-sdk` packages.
 
+<p align="center">
+  <img src="assets/quickstart-both.png" width="100%" alt="The TypeScript (example.ts) and Python (example.py) quickstarts side by side: launch a StagehandBrowser, pass it to the Anthropic tool runner, and print Claude's messages.">
+</p>
+<p align="center"><sub><a href="typescript/example.ts">typescript/example.ts</a> · <a href="python/example.py">python/example.py</a></sub></p>
+
 > [!WARNING]
 > Demo and reference code only. Browserbase does not claim that any recipe, integration, target, data source, vendor, or workflow in this repository has been vetted, approved, secured, or validated for production use. Independently review the code and obtain all required authorization before running it. You are responsible for compliance, site terms, privacy, security, costs, and outcomes. Use at your own risk.
 
