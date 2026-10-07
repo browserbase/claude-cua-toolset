@@ -2,7 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { StagehandBrowser } from "stagehand-claude-sdk";
 
 const browser = await StagehandBrowser.launch({
-  headless: true,
+  headless: false,
   allowedDomains: ["example.com", "iana.org"],
 });
 try {

@@ -1,6 +1,6 @@
 # Claude Toolset for Python
 
-Run an async Claude browser task with the Anthropic SDK and the `stagehand-claude-sdk` Python package. This example opens `example.com` in headless Chrome and asks Claude for the page heading.
+Run an async Claude browser task with the Anthropic SDK and the `stagehand-claude-sdk` Python package. This example opens `example.com` in a visible Chrome window and asks Claude for the page heading.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ from stagehand_claude_sdk import StagehandBrowser
 
 async def main() -> None:
     browser = await StagehandBrowser.launch(
-        headless=True,
+        headless=False,
         allowed_domains=["example.com", "iana.org"],
     )
 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-Edit the model and task directly in `example.py`. Set `headless=False` to watch local Chrome, and update `allowed_domains` for your task's websites.
+Edit the model and task directly in `example.py`. Set `headless=True` to run without a visible Chrome window, and update `allowed_domains` for your task's websites.
 
 ## Use Browserbase
 

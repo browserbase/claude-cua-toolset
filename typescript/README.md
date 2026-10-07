@@ -1,6 +1,6 @@
 # Claude Toolset for TypeScript
 
-Run a Claude browser task with the Anthropic SDK and the `stagehand-claude-sdk` npm package. This example opens `example.com` in headless Chrome and asks Claude for the page heading.
+Run a Claude browser task with the Anthropic SDK and the `stagehand-claude-sdk` npm package. This example opens `example.com` in a visible Chrome window and asks Claude for the page heading.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { StagehandBrowser } from "stagehand-claude-sdk";
 
 const browser = await StagehandBrowser.launch({
-  headless: true,
+  headless: false,
   allowedDomains: ["example.com", "iana.org"],
 });
 
@@ -52,7 +52,7 @@ try {
 }
 ```
 
-Edit the model and task directly in `example.ts`. Set `headless: false` to watch local Chrome, and update `allowedDomains` for your task's websites.
+Edit the model and task directly in `example.ts`. Set `headless: true` to run without a visible Chrome window, and update `allowedDomains` for your task's websites.
 
 ## Use Browserbase
 

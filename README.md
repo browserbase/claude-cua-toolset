@@ -25,7 +25,7 @@ Open either language guide for installation, credentials, and run commands. If y
 
 ## Choose a browser
 
-- **Local Chrome:** Run the examples as written. They launch headless Chrome, so install Google Chrome first.
+- **Local Chrome:** Run the examples as written. They launch a visible Chrome window, so install Google Chrome first.
 - **Browserbase:** Run without local Chrome by replacing `StagehandBrowser.launch` with `StagehandBrowser.browserbase` and providing a Browserbase API key. Both language guides include the replacement code.
 
 Keep the same browser instance throughout the tool loop. Close it when the task finishes or fails; the Anthropic tool runner doesn't close it for you.
