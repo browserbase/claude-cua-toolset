@@ -23,6 +23,8 @@ cd claude-cua-toolset
 
 Open either language guide for installation, credentials, and run commands. If you've already cloned the repository, start in the corresponding language directory.
 
+Using a coding agent? Point it at [AGENTS.md](AGENTS.md) and it will set up and run the example with you.
+
 ## Choose a browser
 
 - **Local Chrome:** Run the examples as written. They launch a visible Chrome window, so install Google Chrome first.
