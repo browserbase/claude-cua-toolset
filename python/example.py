@@ -7,7 +7,7 @@ from stagehand_claude_sdk import StagehandBrowser
 
 async def main() -> None:
     browser = await StagehandBrowser.launch(
-        headless=True,
+        headless=False,
         allowed_domains=["example.com", "iana.org"],
     )
     async with browser:
