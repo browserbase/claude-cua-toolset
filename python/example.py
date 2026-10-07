@@ -11,7 +11,7 @@ async def main() -> None:
         allowed_domains=["example.com", "iana.org"],
     )
     async with browser:
-        runner = AsyncAnthropic().messages.tool_runner(
+        runner = AsyncAnthropic().beta.messages.tool_runner(
             model="claude-sonnet-5-5",
             max_tokens=1024,
             tools=[browser],
