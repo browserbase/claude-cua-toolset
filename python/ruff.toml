@@ -1,5 +1,4 @@
-# Lint settings for the standalone Python driver (invoked as `uvx ruff check python` from the package root).
-# `src` lets isort classify the sibling modules (browser_toolset_stagehand, conftest) as first-party.
+# Lint settings for the Python quickstart (run `uvx ruff check .` from this directory).
 src = ["."]
 target-version = "py311"
 line-length = 120
