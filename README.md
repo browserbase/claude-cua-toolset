@@ -20,7 +20,7 @@ This repository contains TypeScript and Python examples that import the publishe
 | Language | Guide | Requirements | Package |
 | --- | --- | --- | --- |
 | TypeScript | [TypeScript quickstart](typescript/README.md) | Node.js 22.18+ and pnpm | [npm](https://www.npmjs.com/package/stagehand-claude-sdk) |
-| Python | [Python quickstart](python/README.md) | Python 3.13+ and uv | [PyPI](https://pypi.org/project/stagehand-claude-sdk/) |
+| Python | [Python quickstart](python/README.md) | Python 3.11+ and uv | [PyPI](https://pypi.org/project/stagehand-claude-sdk/) |
 
 Both examples open `example.com`, ask Claude for the page heading, and print the model's messages. You'll need an Anthropic API key and access to the model defined in the example.
 

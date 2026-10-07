@@ -8,7 +8,7 @@ This repository shows how to give Claude a browser through the Anthropic SDK. `S
 | --- | --- | --- |
 | Directory | `typescript/` | `python/` |
 | Example | `typescript/example.ts` | `python/example.py` |
-| Requires | Node.js 22.18+, pnpm | Python 3.13+, uv |
+| Requires | Node.js 22.18+, pnpm | Python 3.11+, uv |
 | Run | `pnpm example` | `uv run --env-file .env python example.py` |
 
 ## How to work with the user
@@ -40,7 +40,7 @@ pnpm --version     # if missing: corepack enable pnpm   (or npm install -g pnpm)
 
 # Python
 uv --version       # if missing: see https://docs.astral.sh/uv/getting-started/installation/
-                   # uv installs Python 3.13 for the project itself if needed
+                   # uv installs a matching Python for the project if needed
 
 # Local Chrome (skip for Browserbase)
 ls "/Applications/Google Chrome.app" 2>/dev/null           # macOS

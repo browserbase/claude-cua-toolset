@@ -1,7 +1,6 @@
 import asyncio
 
 from anthropic import AsyncAnthropic
-
 from stagehand_claude_sdk import StagehandBrowser
 
 

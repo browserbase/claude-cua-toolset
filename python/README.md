@@ -4,7 +4,7 @@ Run an async Claude browser task with the Anthropic SDK and the `stagehand-claud
 
 ## Prerequisites
 
-- Python 3.13 or later and uv, as required by this directory's `pyproject.toml`.
+- Python 3.11 or later and uv.
 - Google Chrome for local execution, or a Browserbase API key for a hosted browser.
 - An Anthropic API key with access to `claude-sonnet-5-5`, or another browser-toolset model you configure in the code.
 
