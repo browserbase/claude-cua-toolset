@@ -1,9 +1,9 @@
 [project]
-name = "python"
+name = "claude-cua-toolset-python"
 version = "0.1.0"
-description = "Add your description here"
+description = "Quickstart: give Claude a browser with the Anthropic SDK and Stagehand"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "anthropic>=1.12.0",
     "stagehand-claude-sdk",
