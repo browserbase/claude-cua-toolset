@@ -72,6 +72,33 @@ const browser = await StagehandBrowser.browserbase({
 
 Keep the tool loop and `finally` block, then run `pnpm example` again. Browserbase creates the browser session, so you don't need local Chrome.
 
+## Enable optional tools
+
+Four browser tools are off by default because they reach past what the page shows: `javascript_exec`, `file_upload`, `read_console` and `read_network`. Turn on the ones your task needs with `configs`, and pass a `confirm` callback:
+
+```typescript
+const browser = await StagehandBrowser.launch({
+  headless: false,
+  allowedDomains: ["example.com"],
+  configs: {
+    javascript_exec: { enabled: true }, // evaluate a JavaScript expression in the page
+    read_console: { enabled: true },    // console messages from allowed domains
+    read_network: { enabled: true },    // requests to allowed domains
+    file_upload: { enabled: true },     // upload local files; also set uploadRoots
+  },
+  uploadRoots: ["/absolute/path/to/uploads"], // file_upload reads only files under these directories
+  confirm: async ({ member, input }) => {
+    // Called before every browser tool call. Return false to refuse that call.
+    return true;
+  },
+});
+```
+
+- **`confirm` is required** for `javascript_exec` and `file_upload`; the Anthropic SDK won't enable them without it. Once you pass `confirm`, it's called before every browser tool call, including navigation and clicks, so return `true` for the routine ones.
+- **`javascript_exec` evaluates an expression** and returns its value as JSON: send `document.title`, not `return document.title`. Scripts run with the page's own cookies and sessions, so use a browser profile that isn't signed in to accounts you wouldn't hand the model.
+- **`read_console` and `read_network`** only report entries from allowed domains.
+- **Downloads:** pass `downloadDir` to save downloads to a local directory (local browsers only).
+
 ## Use in your own project
 
 Install the packages in your TypeScript project:
