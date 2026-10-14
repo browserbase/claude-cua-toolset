@@ -127,6 +127,10 @@ Useful options for `StagehandBrowser.launch` (camelCase in TypeScript, snake_cas
 
 `StagehandBrowser.connect({ cdpUrl })` drives a Chromium that is already running; `StagehandBrowser.browserbase({ apiKey })` creates a hosted session.
 
+## Turn on optional tools
+
+`javascript_exec`, `file_upload`, `read_console` and `read_network` are off by default. Enable one only when the user's task needs it, and ask the user first for `javascript_exec` (it runs with the page's cookies and sessions) and `file_upload` (it reads local files). Both require a `confirm` callback; `file_upload` also needs `uploadRoots` / `upload_roots` set to a dedicated directory. The "Enable optional tools" section of each language README has the exact code.
+
 ## Troubleshooting
 
 | Symptom | Fix |
