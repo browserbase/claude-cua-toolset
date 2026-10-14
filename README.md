@@ -54,8 +54,8 @@ Change the task in `messages` and set the model directly in `example.ts` or `exa
 
 ## Limitations
 
-- Domain lists restrict HTTP and HTTPS requests. A domain entry includes its subdomains, and blocked entries take precedence.
-- Domain restrictions don't cover WebSocket handshakes. Don't treat the lists as complete network isolation.
+- Domain lists apply to the browser's HTTP and HTTPS requests and WebSocket handshakes. A domain entry includes its subdomains, and blocked entries take precedence.
+- Domain lists are a guardrail, not complete network isolation.
 - Local browsers must be Chromium-based. Firefox and WebKit aren't supported.
 - Downloads aren't supported in Browserbase sessions.
 - If the browser connection is lost, close the toolset and create a new instance.
